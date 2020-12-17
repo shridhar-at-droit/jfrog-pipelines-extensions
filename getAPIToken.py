@@ -1,9 +1,4 @@
 import requests 
-import http.cookies
-import requests
-import json
-import sys
-import os
 import json 
 
 username = 'xxxx' #add username
