@@ -1,0 +1,22 @@
+resources:
+  - name: MyGitHub
+    type: GitRepo
+    configuration:
+      path: droitfintech/jfrog-pipelines-extensions
+      gitProvider: githubRepos                                   # <-- Change to your GitHub integration
+      
+  - name: MyTest
+    type: droit/gitops
+    configuration:
+      k8sConfigrepo: droitfintech/annotatorNG-k8s-config
+      branch: master
+pipelines: 
+  - name: MyHealthCheck
+    configuration:
+    steps:
+      - name: Health_Check_Step
+        type: bash
+        configuration:
+          inputResources:
+           - name: MyTest
+           - name: MyGitHub

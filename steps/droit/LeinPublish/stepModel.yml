@@ -1,0 +1,10 @@
+configuration:
+  modules:
+    type: String[]
+  slackChannel:
+    type: String
+  notifyOnSuccess:
+    type: Boolean
+  notifyOnFailure:
+    type: Boolean
+  

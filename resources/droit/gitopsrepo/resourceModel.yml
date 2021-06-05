@@ -1,0 +1,7 @@
+configuration:
+  repo:
+   type: String
+  branch:
+    type: String
+  gitProvider:
+    type: Integration

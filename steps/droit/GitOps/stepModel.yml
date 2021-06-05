@@ -1,0 +1,10 @@
+configuration:
+  dockerRegistry:
+    type: String
+  imageName:
+    type: String[]
+  notifyOnSuccess:
+    type: Boolean
+  notifyOnFailure:
+    type: Boolean
+  

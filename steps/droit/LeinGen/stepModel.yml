@@ -1,0 +1,14 @@
+configuration:
+  module:
+    type: String
+  leinBuildCommand:
+    type: String[]
+  leinDeployCommand:
+    type: String
+  slackChannel:
+    type: String
+  notifyOnSuccess:
+    type: Boolean
+  notifyOnFailure:
+    type: Boolean
+  

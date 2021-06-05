@@ -1,0 +1,8 @@
+configuration:
+  slackChannel:
+    type: String
+  notifyOnSuccess:
+    type: Boolean
+  notifyOnFailure:
+    type: Boolean
+  
